@@ -24,7 +24,7 @@
         <!-- 搜索区域（搜索框和搜索按钮） -->
         <div class="search-box">
           <input type="text" class="ipt" placeholder="请输入要搜索的内容" /><button class="btnSearch">
-            搜索
+            <!-- 搜索 -->
           </button>
         </div>
       </div>
@@ -44,13 +44,14 @@
         function getSuggestList(kw){
           $.ajax({
             url:'https://suggest.taobao.com/sug?q=' + kw,
-            datatType : 'jsonp',
+            dataType : 'jsonp',
             success: function(res){
               console.log(res);
             }
           })
         }
       })
+
     </script>
   </body>
 </html>
